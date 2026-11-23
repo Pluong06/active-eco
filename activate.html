@@ -23,16 +23,25 @@
       <img class="logo" src="assets/icon.png" alt="" />
       <span class="eyebrow">Thank you for going Pro ⭐</span>
       <h1>Activate your license<br />in 30 seconds</h1>
-      <p class="lead">Your license key is in your order confirmation and in the receipt email from Lemon Squeezy.</p>
+      <p class="lead">Your license key is shown right below after payment. It starts with <code>txn_</code>.</p>
     </div>
   </header>
 
   <section>
     <div class="wrap narrow">
+      <div id="keyBox" class="key-box hidden">
+        <p><b>🎉 Payment complete! Your license key:</b></p>
+        <div class="key-row">
+          <code id="keyValue"></code>
+          <button id="copyKey" class="btn btn-primary btn-sm" type="button">Copy</button>
+        </div>
+        <p class="fine">Save it somewhere safe (e.g. a note or email to yourself). You'll need it to activate on another browser.</p>
+      </div>
+
       <div class="steps">
         <div class="step">
           <h3>Copy your license key</h3>
-          <p>Find it on the order confirmation screen or in the email receipt (subject: <i>"Your order"</i>). It looks like <code>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</code>.</p>
+          <p>It's shown on this page right after checkout and looks like <code>txn_01hv8x2k9m3n4p5q6r7s8t9v0w</code>.</p>
         </div>
         <div class="step">
           <h3>Open the extension</h3>
@@ -55,24 +64,24 @@
       <h2 class="mt">Troubleshooting</h2>
       <p class="sub"></p>
       <details>
-        <summary>"Invalid license key"</summary>
-        <p>Copy the whole key with no spaces before or after. Make sure you're using the key from <i>this</i> product's receipt.</p>
+        <summary>"License key not found" / "doesn't look like a license key"</summary>
+        <p>Copy the whole key, starting with <code>txn_</code>, with no spaces before or after.</p>
       </details>
       <details>
         <summary>"Activation limit reached"</summary>
         <p>The key is already active on 3 browsers. Deactivate it in one of them, or email us and we'll reset it.</p>
       </details>
       <details>
-        <summary>"This license has expired"</summary>
-        <p>Your subscription ended or a renewal payment failed. Update your payment method in <a data-portal href="#">your orders</a>, then click <b>Activate</b> again.</p>
+        <summary>"Your subscription is canceled / past due"</summary>
+        <p>Your subscription ended or a renewal payment failed. Use the <b>manage subscription</b> link in your Paddle receipt email to update your payment method, or buy a new plan, then click <b>Activate</b> again.</p>
       </details>
       <details>
-        <summary>I can't find my license key</summary>
-        <p>Check your spam folder, or open <a data-portal href="#">your Lemon Squeezy orders</a> with the email you used at checkout. Still nothing? Email <a data-email href="#"></a> with your order number.</p>
+        <summary>I lost my license key</summary>
+        <p>Email <a data-email href="#"></a> from the email address you used at checkout. We'll send your key back, usually within 24 hours.</p>
       </details>
       <details>
         <summary>How do I cancel or change my plan?</summary>
-        <p>Manage your subscription anytime in <a data-portal href="#">your Lemon Squeezy orders</a>. Pro stays active until the end of the period you paid for.</p>
+        <p>Click <b>Manage subscription</b> in the extension's ⭐ Pro tab, or use the link in your Paddle receipt email. Pro stays active until the end of the period you paid for.</p>
       </details>
     </div>
   </section>
