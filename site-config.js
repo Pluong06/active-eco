@@ -9,7 +9,7 @@ window.SITE = {
 
   paddle: {
     environment: "production",        // "sandbox" while testing with test cards
-    clientToken: "live_XXXXXXXXXXXXXXXXXXXXXXXXXXX" // Paddle → Developer tools → Authentication → Client-side tokens
+    clientToken: "live_3528247d6b3daf1a7c411fdedfa" // Paddle → Developer tools → Authentication → Client-side tokens
   },
 
   // Empty price = plan hidden on the site.
