@@ -273,3 +273,16 @@ body.installed .store-only { display: none !important; }
 
 .center { text-align: center; }
 .mt { margin-top: 28px; }
+
+/* License key box (activate.html?key=txn_...) */
+.hidden { display: none !important; }
+.key-box {
+  margin: 0 auto 28px; padding: 18px 20px; border-radius: 14px;
+  background: #ecfdf5; border: 2px solid #34d399; text-align: center;
+}
+.key-box p { margin: 0 0 10px; color: #065f46; }
+.key-row { display: flex; gap: 8px; justify-content: center; align-items: center; flex-wrap: wrap; }
+.key-row code {
+  font-size: 16px; padding: 10px 14px; background: #fff; border: 1px solid #a7f3d0;
+  border-radius: 10px; word-break: break-all; user-select: all;
+}
